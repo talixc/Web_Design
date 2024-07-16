@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+ <form>
+    <!-- Form - informa ao navegador que iniciará um formulário -->
+    <fieldset><legend>Dados Pessoais</legend>
+        <table>
+        <tr>
+        <!-- fieldset - campo/inserção de dados.
+         Cria um conjunto com dados e uma borda -->
+         <!-- Legend - adiciona uma legenda ou texto que categoriza o fieldset -->
+   <td> Nome: </td>
+   <td><input  type="text" name="Nome"><br></td>
+        </tr>
+
+  <tr> 
+    <td> Sobrenome:</td>
+    <td> <input type="text"name="Sobrenome"><br></td>
+    <tr>
+      <tr> 
+    <td>Idade:</td> 
+    <td><input type="number"name="idade"min="0"
+    max="120"><br> </td> </tr> 
+
+<tr>   <td>Data de Nascimento:</td>
+    <td> <input type="date" name="D_ Nascimento"><br></td> 
+ </tr> </table></fieldset>
+<fieldset>
+    <table>
+        <tr>
+     <legend> Dados Profissionais:</legend>
+     <td>Escolaridade:</td><br> </tr>
+     <!-- Type="radio" -->
+     <td><input type="radio" name="Escolaridade" value="Ensino Fundamental Incompleto"> Ensino Fundamental Incompleto <br></td>
+     <td><input type="radio" name="Escolaridade" value="Ensino Fundamental Completo">Ensino Fundamental Completo<br></td>
+     <td><Input type="radio" name="Escolaridade" value="Ensino Médio Incompleto"> Ensino Médio Incompleto <br></td>
+    <td><input type="radio" name="Escolaridade" value="Ensino Médio Completo"> Ensino Médio Completo <br></td>
+
+   <tr> <td>Ultima Experiência:</td>
+    <td>  <input type="text"name= "experiencia"><br> </td></tr>
+    <!-- Placeholder- texto padrão que auxilia o usuario, indicando o que se espera naqule input-->
+    <!-- Required- torna o preenchimento do input obrigatório -->
+
+    <tr><td>Pretensão Salarial 
+        <td><input type="number"name="experiencia" step="0.10"min="0.00" placeholder="0.00" required></td></tr> 
+   
+</table></fieldset>
+<input type="reset" value="Limpar">
+<input type="submit" value="salvar">
+ </form>   
+</body>
+</html>             
